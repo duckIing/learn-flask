@@ -1,0 +1,14 @@
+# 编译文件
+**/__pycache__
+
+# IDE 文件
+**/.idea
+
+# 虚拟环境目录
+**/pyenv
+**/movie_view_system_env
+
+# mysql8 目录
+**/mysql8
+**/mysql8/*
+

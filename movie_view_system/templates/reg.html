@@ -1,0 +1,50 @@
+{% extends "common/layout.html" %}
+{% block content %}
+
+{#    布局12列#}
+    <div class="row">
+{#     使用8列，缩进2列，从而对其#}
+        <div class="col-lg-8 col-lg-offset-2">
+{#            面板样式#}
+            <div class="panel panel-primary">
+{#                面板头#}
+                <div class="panel-heading" style="font-size: 20px">用户注册</div>
+{#                面板体#}
+                <div class="panel-body">
+                    <div class="reg_wrap">
+                        <div class="form-group">
+                            <label for="nick_name">昵称</label>
+                            <input type="text" class="form-control" name="nick_name" id="nick_name"
+                                   placeholder="请输入用户名">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="login_name">用户名</label>
+                            <input type="text" class="form-control" name="login_name" id="login_name"
+                                   placeholder="请输入用户名">
+                        </div>
+                        <div class="form-group">
+                            <label for="login_pwd1">密码</label>
+                            <input type="password" class="form-control" name="login_pwd1" id="login_pwd1"
+                                   placeholder="请输入密码">
+                        </div>
+                        <div class="form-group">
+                            <label for="login_pwd2">确认密码</label>
+                            <input type="password" class="form-control" name="login_pwd2" id="login_pwd2"
+                                   placeholder="请输入密码">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block do-reg" style="font-size: 14px">
+                            注册
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}
+
+{% block js %}
+    <script src={{ build_static_url('/js/reg.js') }}></script>
+{% endblock %}

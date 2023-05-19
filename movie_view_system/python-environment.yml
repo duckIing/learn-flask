@@ -1,0 +1,42 @@
+name: learn-flask
+
+channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/mro/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pro/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/Paddle/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
+  - rusty1s
+  - pytorch
+  - open3d-admin
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  - ca-certificates=2023.01.10
+  - certifi=2022.12.7
+  - libcxx=14.0.6
+  - libffi=3.4.2
+  - ncurses=6.4
+  - openssl=1.1.1t
+  - pip=22.3.1
+  - python=3.9.16
+  - readline=8.2
+  - setuptools=65.6.3
+  - sqlite=3.40.1
+  - tk=8.6.12
+  - tzdata=2022g
+  - wheel=0.37.1
+  - xz=5.2.10
+  - zlib=1.2.13
+  - pip:
+      - Flask==2.3.2
+      - Flask-SQLAlchemy==3.0.3
+      - PyMySQL==1.0.3
+      - bcrypt==4.0.1
+

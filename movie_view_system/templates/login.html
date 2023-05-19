@@ -1,0 +1,31 @@
+{% extends "common/layout.html" %}
+{% block content %}
+
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <div class="panel panel-primary">
+                <div class="panel-heading" style="font-size: 20px">用户登陆</div>
+                <div class="panel-body login_wrap">
+                    <div>
+                        <div class="form-group">
+                            <label for="login_name">用户名</label>
+                            <input type="text" class="form-control" name="login_name" id="login_name" placeholder="请输入用户名">
+                        </div>
+                        <div class="form-group">
+                            <label for="login_pwd">密码</label>
+                            <input type="password" class="form-control" id="login_pwd" name="login_pwd"
+                                   placeholder="请输入密码">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block do-login" style="font-size: 14px">登陆</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}
+
+{% block js %}
+    <script src={{ build_static_url('/js/login.js') }}></script>
+{% endblock %}

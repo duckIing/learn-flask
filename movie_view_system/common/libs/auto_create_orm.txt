@@ -1,0 +1,30 @@
+# 创建环境
+cd f:\
+f:
+
+mkdir sqlacodegen
+cd f:\sqlacodegen
+
+git clone https://github.com/ksindi/flask-sqlacodegen.git
+
+cd f:\sqlacodegen\flask-sqlacodegen
+
+conda create -n sqlacodegen_env python=3.7 -y
+
+conda activate sqlacodegen_env 
+
+cd f:\sqlacodegen\flask-sqlacodegen
+
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple  
+
+
+
+# 使用方法
+conda activate sqlacodegen_env 
+
+cd f:\sqlacodegen\flask-sqlacodegen
+
+# 官方案例：
+# python -m sqlacodegen.main --flask --outfile models.py mysql+pymysql://<username>:<password>@<database-ip>:<port>/<database-name> [--tables <tablenames>] [--notables]
+
+python -m sqlacodegen.main --flask --outfile  models.py mysql+pymysql://root:rootroot@127.0.0.1:3306/movie_system?charset=utf8mb4 --tables user

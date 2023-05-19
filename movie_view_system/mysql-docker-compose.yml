@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+ mysql8:
+   image: mysql:8.0.32
+   restart: always
+   container_name: mysql8
+   volumes:
+     - "/Users/duckIing/Code/learn-flask/movie_view_system/mysql8/conf:/etc/mysql/conf.d"
+     - "/Users/duckIing/Code/learn-flask/movie_view_system/mysql8/logs:/var/log/mysql"
+     - "/Users/duckIing/Code/learn-flask/movie_view_system/mysql8/data:/var/lib/mysql"
+   ports:
+     - "3306:3306"
+   environment:
+     MYSQL_ROOT_PASSWORD: rootroot
+     TZ: Asia/Shanghai
